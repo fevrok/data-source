@@ -1,0 +1,13 @@
+{
+    "name": "laravelarab/data-source",
+    "description": "This Package will provide every data a site owner may need in the future :D",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdellah Chadidi",
+            "email": "chadidi97@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
