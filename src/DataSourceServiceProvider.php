@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelArab\DataSource;
+namespace LaravelArab\data-source;
 
 use Illuminate\Support\ServiceProvider;
 
