@@ -13,5 +13,5 @@ return [
     *  	'animals'=>['country','country''country']
     * );
     */
-    'data_array' => array('locations'=>['country','state','city']);
+    'data_array' => array('locations'=>['country','state','city'])
 ];
