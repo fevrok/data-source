@@ -16,6 +16,7 @@ class DataSourceServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/publishes/config/config.php' => config_path('datasource.php'),
         ], 'config');
+        // include __DIR__.'/DataSource.php';
     }
 
     /**
@@ -27,13 +28,14 @@ class DataSourceServiceProvider extends ServiceProvider
     {
         $packageConfigFile = __DIR__.'/publishes/config/config.php';
 
-        /*$this->mergeConfigFrom(
+        $this->mergeConfigFrom(
             $packageConfigFile, 'datasource'
-        );*/
+        );
 
-        $this->app->singleton(DataSource::class, function () {
+        /*$this->app->singleton(DataSource::class, function () {
             return new DataSource();
-        });
+        });*/
+        // $this->app->make('LaravelArab\DataSource\DataSource.php');
 
         $this->app->alias(DataSource::class, 'datasource');
     }
