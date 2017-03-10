@@ -1,10 +1,16 @@
 <?php 
 return [
 
-    /*
-     * If set to false, no activities will be saved to the database.
-    */
-    'enabled' => env('DATA_SOURCE_ENABLED', true),
+    // set your default locale
+    'locale' => 'ar',
+
+    /*'models' => [
+        'country' => '',
+        'state' => '',
+        'city' => '',
+        'industry' => '',
+        'subindustry' => ''
+    ],*/
     /*
     * You can specify the data types you wanna use e.g.
     * array(
