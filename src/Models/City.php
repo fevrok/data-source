@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class City extends Model
 {
-    protected $table = "data_cities";
+  protected $table = "data_cities";
 
-    public function country(){
+  public function country(){
 		return $this->belongsTo('LaravelArab\DataSource\Models\Country');
 	}
 	public function state(){
