@@ -38,9 +38,6 @@ class DataSource
     public function countryByName($name){
         return Country::where('name','like',"%".$name."%")->first();
     }
-    public function countriesByName($name){
-        return Country::where('name','like',"%".$name."%")->get();
-    }
     // States
     public function states(){
         return State::All();
@@ -48,14 +45,8 @@ class DataSource
     public function state($id){
         return State::find($id);
     }
-    public function stateByCode($code){
-        return State::where('code',$code)->first();
-    }
     public function stateByName($name){
         return State::where('name','like',"%".$name."%")->first();
-    }
-    public function statesByName($name){
-        return State::where('name','like',"%".$name."%")->get();
     }
     // Cities    
     public function cities(){
@@ -64,14 +55,8 @@ class DataSource
     public function city($id){
         return City::find($id);
     }
-    public function cityByCode($code){
-        return City::where('code',$code)->first();
-    }
     public function cityByName($name){
         return City::where('name','like',"%".$name."%")->first();
-    }
-    public function citiesByName($name){
-        return City::where('name','like',"%".$name."%")->get();
     }
 
 }
